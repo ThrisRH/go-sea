@@ -48,3 +48,4 @@ build/
 
 # Docker
 docker-compose.override.yml
+config/production.yaml
