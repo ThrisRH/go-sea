@@ -2,6 +2,7 @@ package controllers
 
 import (
 	"go-sea-crm/internal/service"
+	"go-sea-crm/pkg/response"
 
 	"github.com/gin-gonic/gin"
 )
@@ -17,6 +18,6 @@ func NewUserController() *UserController {
 }
 
 func (uc *UserController) GetUserInfo(c *gin.Context) {
-	// response.SuccessResponse(c, 20001, []string{"thrisx, tudun"})
+	response.SuccessResponse(c, 20001, []string{"thrisx, tudun"})
 	// response.ErrorResponse(c, 20003, "Not found!")
 }

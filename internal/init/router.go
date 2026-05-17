@@ -1,4 +1,4 @@
-package routers
+package init
 
 import (
 	"go-sea-crm/internal/controllers"
@@ -8,7 +8,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func NewRouter() *gin.Engine {
+func InitRouter() *gin.Engine {
 	r := gin.Default()
 
 	r.Use(middleware.AuthMiddleware())

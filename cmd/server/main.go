@@ -1,11 +1,11 @@
 package main
 
-import (
-	"go-sea-crm/internal/routers"
-)
+import appinit "go-sea-crm/internal/init"
 
 func main() {
-	r := routers.NewRouter()
+	// r := routers.NewRouter()
 
-	r.Run(":8080")
+	// r.Run(":8080")
+
+	appinit.Run()
 }

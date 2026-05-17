@@ -1,9 +1,11 @@
 server:
   port: 8082
-databases:
-  user: admin
+postgre:
   host: localhost
-  dbName: go-sea
-security:
-  jwt:
-    key: abc123
+  port: 5432
+  dbName: crm_dev
+  username: root
+  password: Chubaduy@123
+  maxIdleConns: 10
+  maxOpenConns: 100
+  connMaxLifetime: 3600 
